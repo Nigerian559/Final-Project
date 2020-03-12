@@ -176,6 +176,18 @@ function gameWon() {
   ) {
     alert("o Won");
     stopPlay();
+  } else if (
+    square0.innerText != "" &&
+    square1.innerText != "" &&
+    square2.innerText != "" &&
+    square3.innerText != "" &&
+    square4.innerText != "" &&
+    square5.innerText != "" &&
+    square6.innerText != "" &&
+    square7.innerText != "" &&
+    square8.innerText != ""
+  ) {
+    scratch();
   }
 }
 
@@ -192,7 +204,6 @@ function defaultState() {
 restartGet.addEventListener("click", defaultState);
 
 function scratch() {
-  if (squares.innerText == "") 
   alert("Draw, Try Again");
   stopPlay;
 }
